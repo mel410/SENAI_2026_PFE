@@ -21,6 +21,23 @@
   body {
     background-color: #fbe5bc;
   }
+  .card-body {
+    background-color: #fff3e0;
+    border-color: black;
+    border-width: 0.5px;
+    border-style: solid;
+  }
+  .card-link {
+    color: #ff9800;
+    font-weight: bold;
+    border-color: black;
+    border-width: 1.5px;
+    border-style: solid;
+    padding: 5px 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
 </style>
 
 </head>
@@ -28,31 +45,31 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Pet Center da Melzinha</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active" href="#">Página Principal</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Produtos</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Dropdown
+            Serviços
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Banho e Tosa</a></li>
+            <li><a class="dropdown-item" href="#">Veterinário</a></li>
           </ul>
         </li>
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Pesquisar produtos..."/>
+        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
       </form>
     </div>
   </div>
@@ -104,3 +121,16 @@
 
 </body>
 </html>
+<div class="card" style="width: 18rem;">
+  <img src="https://tse4.mm.bing.net/th/id/OIP.HOJjMRWGivt7U7GhmysH0QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Kit lavagem para pets</h5>
+    <p class="card-text">O kit de higiene da Pet Clean reúne produtos essenciais para cuidar da limpeza e saúde do pet, incluindo itens para higiene bucal, olhos, patas e banho seco. É uma opção prática para manter o animal sempre limpo e bem cuidado. 🐶
+</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Comprar Agora!</a>
+    <br>
+    <a href="#" class="card-link">Adicionar ao Carrinho</a>
+  </div>
+</div>

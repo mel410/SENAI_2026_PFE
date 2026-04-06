@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+/* Reset e Configuração Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Container Principal - Agora com um degradê suave e moderno */
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 100%);
+    padding: 20px;
+}
+
+/* O Card de Login - Estilo Glassmorphism (Efeito Vidro) */
+.login-box {
+    display: flex;
+    width: 1000px;
+    height: 620px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+}
+
+/* Lado da Imagem - Agora com um azul vibrante e formas geométricas */
+.login-image {
+    flex: 1.2;
+    position: relative;
+    background: linear-gradient(225deg, #2563eb 0%, #1e40af 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Adicionando um detalhe decorativo abstrato atrás da imagem */
+.login-image::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+    top: -20%;
+    left: -20%;
+}
+
+.login-image img {
+    width: 80%;
+    height: auto;
+    z-index: 1;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.2));
+}
+
+.image-overlay {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: white;
+    z-index: 2;
+}
+
+.image-overlay h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+/* Lado do Formulário - Limpo e Minimalista */
+.login-form-side {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.form-wrapper {
+    width: 100%;
+}
+
+.form-wrapper h2 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.form-wrapper p {
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+/* Inputs com bordas suaves e cores pastéis */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 18px;
+    background: #f8fafc;
+    border: 2px solid #f1f5f9;
+    border-radius: 12px;
+    color: #1e293b;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+    background: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+    outline: none;
+}
+
+/* Botão Azul Royal Arredondado */
+.btn-login {
+    width: 100%;
+    padding: 16px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Botão estilo pílula */
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 15px;
+}
+
+.btn-login:hover {
+    background: #1d4ed8;
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4);
+}
+
+.form-footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #64748b;
+}
+
+.form-footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .login-box { width: 100%; height: auto; flex-direction: column; }
+    .login-image { display: none; }
+}

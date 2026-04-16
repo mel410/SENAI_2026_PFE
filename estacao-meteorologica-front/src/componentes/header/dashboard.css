@@ -1,0 +1,84 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FUNDO DA PÁGINA */
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding: 20px;
+}
+
+/* TÍTULO */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* GRID DOS CARDS */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+/* TÍTULO DO CARD */
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #94a3b8;
+}
+
+/* VALOR GRANDE */
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* CORES DIFERENTES PRA CADA CARD */
+.card.temp {
+  border-left: 5px solid #38bdf8;
+}
+
+.card.humidity {
+  border-left: 5px solid #22c55e;
+}
+
+.card.wind {
+  border-left: 5px solid #f59e0b;
+}
+
+/* HEADER (caso use junto) */
+.header {
+  width: 100%;
+  background: #020617;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.header h1 {
+  font-size: 20px;
+}

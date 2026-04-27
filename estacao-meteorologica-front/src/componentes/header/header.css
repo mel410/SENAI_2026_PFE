@@ -1,0 +1,62 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background:#1b102b; /* fundo roxo escuro do sistema */
+}
+
+/* Header do dashboard */
+header{
+    width:100%;
+    background:#4a1e82; /* roxo principal */
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Título */
+header h2{
+    font-size:22px;
+    font-weight:600;
+}
+
+/* Menu */
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+/* Links */
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    padding:8px 14px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+/* Hover */
+nav ul li a:hover{
+    background:#35145f; /* roxo mais escuro */
+}
+
+/* Botão sair */
+nav ul li:last-child a{
+    background:white;
+    color:#4a1e82;
+    font-weight:600;
+}
+
+nav ul li:last-child a:hover{
+    background:#ddd;
+}

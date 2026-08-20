@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #fce7f3, #f9a8d4, #ec4899);
+  min-height: 100vh;
+}
+
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  background: #fff7fb;
+  border-radius: 22px;
+  padding: 35px;
+  box-shadow: 0 20px 50px rgba(190, 24, 93, 0.25);
+}
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cabecalho h1 {
+  color: #be185d;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cabecalho p {
+  color: #9d174d;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo label {
+  font-weight: bold;
+  color: #831843;
+  font-size: 14px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #f9a8d4;
+  border-radius: 10px;
+  background: white;
+  color: #831843;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.campo input:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.15);
+}
+
+.campo input::placeholder {
+  color: #d1a0b8;
+}
+
+button {
+  margin-top: 5px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ec4899, #be185d);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #db2777, #9d174d);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(190, 24, 93, 0.25);
+}
+
+.resultado {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 2px solid #fbcfe8;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.resultado-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fce7f3;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.resultado-item span {
+  color: #9d174d;
+  font-weight: bold;
+}
+
+.resultado-item strong {
+  color: #db2777;
+  font-size: 20px;
+}
+
+.resultado-item.total {
+  background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+.resultado-item.total span,
+.resultado-item.total strong {
+  color: white;
+}

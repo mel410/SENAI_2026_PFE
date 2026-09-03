@@ -1,10 +1,10 @@
 import Header from '../components/header';
 
 const alunos = [
-  { nome: 'Ana Souza', turma: '1A', responsavel: 'Mariana Souza' },
-  { nome: 'Pedro Lima', turma: '2B', responsavel: 'Carlos Lima' },
-  { nome: 'Beatriz Costa', turma: '3C', responsavel: 'Sandra Costa' },
-  { nome: 'Lucas Ferreira', turma: '5A', responsavel: 'João Ferreira' },
+  { id: 1, ra: 1001, nome: 'Melissa', idade: 17, serieTurma: '3A' },
+  { id: 2, ra: 1002, nome: 'Bianca', idade: 17, serieTurma: '3A' },
+  { id: 3, ra: 1003, nome: 'Luana', idade: 18, serieTurma: '3A' },
+  { id: 4, ra: 1004, nome: 'Noemi', idade: 18, serieTurma: '3A' },
 ];
 
 export default function ListaAluno() {
@@ -15,21 +15,36 @@ export default function ListaAluno() {
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <h1 style={{ color: '#111111', marginBottom: '24px' }}>Lista de alunos</h1>
 
-          <div style={{ display: 'grid', gap: '18px' }}>
-            {alunos.map((aluno) => (
-              <div key={aluno.nome} style={{ background: '#fff', borderRadius: '20px', padding: '20px 24px', boxShadow: '0 16px 30px rgba(17,17,17,0.04)', display: 'flex', justifyContent: 'space-between', gap: '16px', flexWrap: 'wrap' }}>
-                <div>
-                  <h3 style={{ color: '#111111', marginBottom: '6px' }}>{aluno.nome}</h3>
-                  <p style={{ color: '#3f3f46', margin: 0 }}>Turma: {aluno.turma}</p>
-                </div>
-                <div style={{ color: '#7f1d1d', fontWeight: 700, alignSelf: 'center' }}>
-                  Responsável: {aluno.responsavel}
-                </div>
-              </div>
-            ))}
+          <div style={{ overflowX: 'auto', background: '#fff', borderRadius: '20px', boxShadow: '0 16px 30px rgba(17,17,17,0.04)' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '680px' }}>
+              <thead>
+                <tr style={{ background: '#111111', color: '#fff', textAlign: 'left' }}>
+                  <th style={cellStyle}>ID</th>
+                  <th style={cellStyle}>RA</th>
+                  <th style={cellStyle}>Nome do aluno</th>
+                  <th style={cellStyle}>Idade</th>
+                  <th style={cellStyle}>Série/Turma</th>
+                </tr>
+              </thead>
+              <tbody>
+                {alunos.map((aluno) => (
+                  <tr key={aluno.id} style={{ color: '#3f3f46', borderBottom: '1px solid rgba(17,17,17,0.08)' }}>
+                    <td style={cellStyle}>{aluno.id}</td>
+                    <td style={cellStyle}>{aluno.ra}</td>
+                    <td style={{ ...cellStyle, color: '#111111', fontWeight: 600 }}>{aluno.nome}</td>
+                    <td style={cellStyle}>{aluno.idade}</td>
+                    <td style={cellStyle}>{aluno.serieTurma}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </main>
     </>
   );
 }
+
+const cellStyle = {
+  padding: '16px 20px',
+};

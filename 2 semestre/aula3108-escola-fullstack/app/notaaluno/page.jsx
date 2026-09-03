@@ -13,24 +13,33 @@ export default function NotasAluno() {
               Aluno
               <select style={inputStyle}>
                 <option>Selecione o aluno</option>
-                <option>Ana Souza</option>
-                <option>Pedro Lima</option>
-                <option>Beatriz Costa</option>
+                <option>Melissa</option>
+                <option>Bianca</option>
+                <option>Luana</option>
+                <option>Noemi</option>
               </select>
             </label>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '20px' }}>
               <label style={{ display: 'grid', gap: '8px', color: '#111111', fontWeight: 600 }}>
-                Matemática
-                <input type="number" min="0" max="10" step="0.1" placeholder="0.0" style={inputStyle} />
+                T1 (Trabalho 1)
+                <input type="number" name="t1" min="0" max="10" step="0.1" placeholder="0.0" style={inputStyle} />
               </label>
               <label style={{ display: 'grid', gap: '8px', color: '#111111', fontWeight: 600 }}>
-                Português
-                <input type="number" min="0" max="10" step="0.1" placeholder="0.0" style={inputStyle} />
+                T2 (Trabalho 2)
+                <input type="number" name="t2" min="0" max="10" step="0.1" placeholder="0.0" style={inputStyle} />
               </label>
               <label style={{ display: 'grid', gap: '8px', color: '#111111', fontWeight: 600 }}>
-                Ciências
-                <input type="number" min="0" max="10" step="0.1" placeholder="0.0" style={inputStyle} />
+                N1 (Nota 1)
+                <input type="number" name="n1" min="0" max="10" step="0.1" placeholder="0.0" style={inputStyle} />
+              </label>
+              <label style={{ display: 'grid', gap: '8px', color: '#111111', fontWeight: 600 }}>
+                N2 (Nota 2)
+                <input type="number" name="n2" min="0" max="10" step="0.1" placeholder="0.0" style={inputStyle} />
+              </label>
+              <label style={{ display: 'grid', gap: '8px', color: '#111111', fontWeight: 600 }}>
+                N3 (Nota 3)
+                <input type="number" name="n3" min="0" max="10" step="0.1" placeholder="0.0" style={inputStyle} />
               </label>
             </div>
 

@@ -11,23 +11,23 @@ export default function CadastroAluno() {
           <form style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
             <label style={{ display: 'grid', gap: '8px', color: '#111111', fontWeight: 600 }}>
               Nome
-              <input type="text" placeholder="Digite o nome" style={inputStyle} />
+              <input type="text" name="nome" placeholder="Digite o nome" style={inputStyle} required />
             </label>
             <label style={{ display: 'grid', gap: '8px', color: '#111111', fontWeight: 600 }}>
-              Turma
-              <input type="text" placeholder="Ex: 1A" style={inputStyle} />
+              Idade
+              <input type="number" name="idade" placeholder="Digite a idade" min="1" style={inputStyle} required />
             </label>
             <label style={{ display: 'grid', gap: '8px', color: '#111111', fontWeight: 600 }}>
-              Email
-              <input type="email" placeholder="aluno@email.com" style={inputStyle} />
+              Série
+              <input type="text" name="serie" placeholder="Ex: 1º ano" style={inputStyle} required />
             </label>
             <label style={{ display: 'grid', gap: '8px', color: '#111111', fontWeight: 600 }}>
-              Data de matrícula
-              <input type="date" style={inputStyle} />
+              RA
+              <input type="number" name="ra" placeholder="Digite o RA" min="1" style={inputStyle} required />
             </label>
 
             <div style={{ gridColumn: '1 / -1', display: 'flex', justifyContent: 'flex-end' }}>
-              <button type="submit" style={buttonStyle}>Salvar aluno</button>
+              <button type="submit" style={buttonStyle}>Cadastrar</button>
             </div>
           </form>
         </div>

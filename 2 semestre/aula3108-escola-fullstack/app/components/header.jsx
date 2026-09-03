@@ -30,7 +30,7 @@ export default function Header() {
           flexWrap: 'wrap',
         }}
       >
-        <h1 style={{ fontSize: '1.5rem', fontWeight: 700 }}>Escola Viva</h1>
+        <h1 style={{ fontSize: '1.5rem', fontWeight: 700 }}>SESI SENAI</h1>
 
         <nav>
           <ul

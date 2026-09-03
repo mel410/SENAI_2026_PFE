@@ -1,9 +1,10 @@
 import Header from '../components/header';
 
 const boletins = [
-  { aluno: 'Ana Souza', matematica: 9.5, portugues: 9.0, ciencias: 9.8 },
-  { aluno: 'Pedro Lima', matematica: 8.7, portugues: 8.2, ciencias: 8.9 },
-  { aluno: 'Beatriz Costa', matematica: 9.2, portugues: 9.5, ciencias: 9.4 },
+  { aluno: 'Melissa', matematica: 9.5, portugues: 9.0, ciencias: 9.8 },
+  { aluno: 'Bianca', matematica: 8.7, portugues: 8.2, ciencias: 8.9 },
+  { aluno: 'Luana', matematica: 9.2, portugues: 9.5, ciencias: 9.4 },
+  { aluno: 'Noemi', matematica: 8.9, portugues: 9.1, ciencias: 9.0 },
 ];
 
 export default function ListaNotas() {
